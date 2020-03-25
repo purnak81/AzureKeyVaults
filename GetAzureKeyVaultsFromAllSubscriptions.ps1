@@ -1,5 +1,5 @@
 
-Retrieving all azure key vault names from all available subscriptions of a azure account
+#Retrieving all azure key vault names from all available subscriptions of a azure account
 
 #YOu can use this script to execute from Powershell ISE or Powershell or Azure CloudShell or Azure Run Books
 
