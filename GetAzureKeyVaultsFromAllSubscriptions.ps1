@@ -20,8 +20,10 @@ $subscriptionlist = Get-AzSubscription
 foreach($sub in $subscriptionlist)
 {
 
+  #the below command sets the powershell session to a particular subscription in the for loop and all the cmdlets that you use after this will execute against the set subscriptionID
   Set-AzContext -SubscriptionId $sub.Id
 
+#below command retrieves all the azure keyvaults available in the above subscrition
 $keylist = Get-AzKeyVault
 
 foreach($key in $keylist)
@@ -31,10 +33,4 @@ foreach($key in $keylist)
 }
 
 }
-
-#Set-AzContext -SubscriptionId "6842be75-1763-413f-94e0-10a1af293710"
-
-
-
-
 
